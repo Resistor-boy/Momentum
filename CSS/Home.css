@@ -1,0 +1,151 @@
+.hidden {
+    display: none;
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+    margin-left: 0;
+}
+
+.center {
+    position: absolute;
+    top: 200px;
+    left: 520px;
+    width: 500px;
+    height: 350px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 3rem;
+    background-color: #fff;
+    z-index: 10000;
+}
+
+.clock-container {
+    width: 100%;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+#clock {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.quote-container {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+}
+
+#quote div:first-child {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#quote div:last-child {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.greeting-container {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#login-form {
+    margin-top: 1rem;
+}
+
+#greeting {
+    margin-top: 1rem;
+}
+
+.todo-container {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#todo-list {
+    position: relative;
+    text-align: center;
+}
+
+#todo-list > li {
+    text-align: center;
+}   
+
+#todo-list > li > span {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#todo-list >li > button{
+    border: 1px solid black;
+    background-color: black;
+    border-radius: 1rem;
+    margin-left: 10px;
+    color: #fff;
+    text-align: right;
+    margin: 5px 10px;
+}
+
+#todo-list > li > button:hover {
+    cursor: pointer;
+}
+
+#image {
+    margin: 0;
+    padding: 0;
+    z-index: -1;
+}   
+
+#login-form > input {
+    width: 20rem;
+    height: 2rem;
+    margin: .5rem auto;
+    border-radius: .5rem;
+    border: black;
+}
+
+#login-form > input:hover {
+    border: 2px solid black;
+    transition-duration: .1s;
+}
+
+#todo-form > input{
+    width: 20rem;
+    height: 2rem;
+    margin: .5rem auto;
+    border-radius: .5rem;
+    border: black;
+}
+
+#todo-form > input:hover {
+    border: 2px solid black;
+    transition-duration: .1s;
+}
+
+@media only screen and (max-width: 1100px) {
+    #todo-list > li > span {
+        font-size: .8rem;
+    }
+    
+    #todo-list > li > button {
+        font-size: .8rem;
+    }
+
+    #quote-div {
+        font-size: 1rem;
+    }
+}
